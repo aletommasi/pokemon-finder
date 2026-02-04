@@ -40,20 +40,21 @@ This project was built as a personal portfolio project to practice API integrati
 
 ## Project Structure
 
+```
 pokemon-finder/
-├─ Home.py # Streamlit app entrypoint (see note below)
+├─ Home.py                     # Streamlit app entrypoint
 ├─ requirements.txt
 ├─ scripts/
-│ ├─ fetch_info.py # Fetches Pokémon info + non-default forms from PokeAPI -> CSV
-│ ├─ fetch_regions.py # Builds per-Pokémon region mapping from region txt files -> CSV
-│ └─ build_db.py # Merges CSVs and writes SQLite database
+│  ├─ fetch_info.py            # Fetches Pokémon info + forms from PokeAPI -> CSV
+│  ├─ fetch_regions.py         # Builds Pokémon-region mapping -> CSV
+│  └─ build_db.py              # Merges CSVs and writes SQLite database
 ├─ utils/
-│ └─ utils.py # SQLite helper (run_query)
+│  └─ utils.py                 # SQLite helper (run_query)
 └─ data/
-├─ regions/ # Region lists (IDs per region)
-├─ raw/ # CSV outputs created by fetch scripts
-└─ processed/ # SQLite database (pokemon.db)
-
+   ├─ regions/                 # Region lists (IDs per region)
+   ├─ raw/                     # CSV outputs created by scripts
+   └─ processed/               # SQLite database (pokemon.db)
+```
 
 ---
 
